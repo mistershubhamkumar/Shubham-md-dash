@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Plugin List</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 30px;
+    }
+
+    .plugin {
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      position: relative;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .plugin h2 {
+      margin: 0;
+      font-size: 24px;
+      color: #ffd700;
+    }
+
+    .plugin p {
+      margin: 5px 0 15px;
+    }
+
+    .copy-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 8px 12px;
+      background-color: #008CBA;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .copy-btn:hover {
+      background-color: #006f98;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>🔌 Plugins</h1>
+
+  <div class="plugin">
+    <h2>AutoReply Plugin</h2>
+    <p>Automatically responds to messages using AI.</p>
+    <button class="copy-btn" onclick="copyText('https://hiddenlink.com/plugin1')">Copy</button>
+  </div>
+
+  <div class="plugin">
+    <h2>Music Bot</h2>
+    <p>Play and manage music in chat.</p>
+    <button class="copy-btn" onclick="copyText('https://hiddenlink.com/plugin2')">Copy</button>
+  </div>
+
+  <div class="plugin">
+    <h2>Group Cleaner</h2>
+    <p>Automatically remove spam from groups.</p>
+    <button class="copy-btn" onclick="copyText('https://hiddenlink.com/plugin3')">Copy</button>
+  </div>
+
+  <script>
+    function copyText(link) {
+      navigator.clipboard.writeText(link).then(() => {
+        alert('Link copied!');
+      });
+    }
+  </script>
+</body>
+</html>
