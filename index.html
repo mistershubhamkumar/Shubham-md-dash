@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MSR Shubham</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 10px 10px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ffe5;
+      letter-spacing: 2px;
+      text-shadow: 0 0 15px #00ffe5;
+    }
+
+    .social-icons {
+      margin: 20px 0;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5rem;
+      background: #333;
+      padding: 12px;
+      border-radius: 50%;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      background: #00ffe5;
+      color: black;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      animation: fadeInUp 1s ease-in;
+    }
+
+    .btn {
+      background: #ffffff20;
+      color: #fff;
+      padding: 15px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.3s;
+      backdrop-filter: blur(10px);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: #00ffe520;
+    }
+
+    nav {
+      position: fixed;
+      top: 15px;
+      right: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #00ffe5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="contact.html">Contact Owner</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <header>
+    <h1>MSR SHUBHAM</h1>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+  </header>
+
+  <div class="button-container">
+    <button class="btn" onclick="window.open('panel-code.html', '_blank')">Panel Code</button>
+    <button class="btn" onclick="window.open('session-id.html', '_blank')">Session ID</button>
+    <button class="btn" onclick="window.open('plugin.html', '_blank')">Plugin</button>
+    <button class="btn" onclick="window.open('env.html', '_blank')">ENV</button>
+    <button class="btn" onclick="window.open('https://wa.me/91XXXXXXXXXX', '_blank')">Request Idea</button>
+    <button class="btn" onclick="window.open('faq.html', '_blank')">FAQ</button>
+  </div>
+
+</body>
+</html>
