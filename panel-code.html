@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Code</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .code-box {
+      background: #1e1e2f;
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 50px auto;
+      max-width: 600px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      position: relative;
+    }.copy-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #4CAF50;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background-color: #45a049;
+}
+
+  </style>
+</head>
+<body>
+  <div class="code-box">
+    <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+    <pre id="code">// Sample Panel Code
+const botName = "Shubham X MD";
+const token = "your_token_here";console.log(Welcome to ${botName});</pre>
+
+  </div>  <script>
+    function copyCode() {
+      const codeText = document.getElementById("code").innerText;
+      navigator.clipboard.writeText(codeText).then(() => {
+        alert("Code copied!");
+      });
+    }
+  </script></body>
+</html>
